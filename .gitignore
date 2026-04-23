@@ -1,0 +1,23 @@
+# 忽略掉 R 语言的临时文件和历史记录
+.Rhistory
+.RData
+.Ruserdata
+
+# 忽略掉 Python 的缓存文件
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 🚨 忽略掉所有超大的原始数据文件！(极其重要)
+*.csv
+*.tsv
+*.txt
+*.xlsx
+*.rds
+*.Rds
+*.h5ad
+
+# ✅ 但是！我们要允许保留作为示例的微型脱敏数据 (mock_data)
+!mock_data.csv
+!mock_data.tsv
+!mock_data.txt
